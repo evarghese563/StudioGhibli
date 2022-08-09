@@ -31,7 +31,7 @@ public class LoadDatabase {
     @Bean
     CommandLineRunner initDatabase(GhibliRepository repository){
 
-		Loadjson tot = new Loadjson("https://ghibliapi.herokuapp.com/films/58611129-2dbc-4a81-a72f-77ddfc1b1b49");
+	Loadjson tot = new Loadjson("https://ghibliapi.herokuapp.com/films/58611129-2dbc-4a81-a72f-77ddfc1b1b49");
         Ghibli totoro = newMovie(tot.getJson());
         
         Loadjson cas = new Loadjson("https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe");
