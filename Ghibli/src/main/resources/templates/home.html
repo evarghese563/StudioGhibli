@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3"> -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.js"></script>
+</head>
+
+<body>
+    <h1>Hello World!!</h1>
+
+    <div class="wrapper">
+        <div class="box a">
+            <ul>
+                <li th:each="Ghibli: ${tot}">
+                    <span th:text="${Ghibli.title}">Default</span>
+                    <span th:text="${Ghibli.director}">Default</span>
+                    <span th:text="${Ghibli.release_date}">Default</span>
+                    <span th:text="${Ghibli.running_time}">Default</span>
+                </li>
+            </ul>
+        </div>
+        <div class="box b">
+            <ul>
+                <li th:each="Ghibli: ${cas}">
+                    <span th:text="${Ghibli.title}">Default</span>
+                    <span th:text="${Ghibli.director}">Default</span>
+                    <span th:text="${Ghibli.release_date}">Default</span>
+                    <span th:text="${Ghibli.running_time}">Default</span>
+                </li>
+            </ul>
+        </div>
+        <div class="box c">
+            <ul>
+                <li th:each="Ghibli: ${gra}">
+                    <span th:text="${Ghibli.title}">Default</span>
+                    <span th:text="${Ghibli.director}">Default</span>
+                    <span th:text="${Ghibli.release_date}">Default</span>
+                    <span th:text="${Ghibli.running_time}">Default</span>
+                </li>
+            </ul>
+        </div>
+        <div class="box d">
+            <ul>
+                <li th:each="Ghibli: ${kik}">
+                    <span th:text="${Ghibli.title}">Default</span>
+                    <span th:text="${Ghibli.director}">Default</span>
+                    <span th:text="${Ghibli.release_date}">Default</span>
+                    <span th:text="${Ghibli.running_time}">Default</span>
+                </li>
+            </ul>
+        </div>
+        <div class="box e">
+            <ul>
+                <li th:each="Ghibli: ${spi}">
+                    <span th:text="${Ghibli.title}">Default</span>
+                    <span th:text="${Ghibli.director}">Default</span>
+                    <span th:text="${Ghibli.release_date}">Default</span>
+                    <span th:text="${Ghibli.running_time}">Default</span>
+                </li>
+            </ul>
+        </div>
+        <div class="box f">
+            <ul>
+                <li th:each="Ghibli: ${how}">
+                    <span th:text="${Ghibli.title}">Default</span>
+                    <span th:text="${Ghibli.director}">Default</span>
+                    <span th:text="${Ghibli.release_date}">Default</span>
+                    <span th:text="${Ghibli.running_time}">Default</span>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <h2>Go to details</h2>
+    <a href="/details">Details page</a>
+    
+</body>
+
+
+
+
+
+<style>
+    body {
+        margin: 30px;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px 200px;
+        grid-gap: 10px;
+        background-color: #fff;
+        color: #444;
+    }
+
+    .box {
+        background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 70%;
+    }
+</style>
+
+
+
+</html>
