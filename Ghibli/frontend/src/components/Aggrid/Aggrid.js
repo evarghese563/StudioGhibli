@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react';
 import {AgGridReact} from 'ag-grid-react'
 import 'ag-grid-community/dist/styles/ag-grid.css'
 import 'ag-grid-community/dist/styles/ag-theme-alpine.css'
+import './Aggrid.css'
 const Aggrid  = () =>{
 
     const ghibliurl = "/ghiblis"
@@ -27,10 +28,10 @@ const Aggrid  = () =>{
 
     return (
         
-        <div className="App">
-            {/* <Navbar /> */}
+        <div className="aggrid">
+ 
             
-            <div className='ag-theme-alpine' style={{height:500}}>
+            <div className='ag-theme-alpine'>
             <AgGridReact
             rowData={rowData}
             columnDefs={columnDefs}
